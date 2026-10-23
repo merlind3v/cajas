@@ -31,8 +31,8 @@ AUR_PKGS=(
 )
 
 sudo pacman -S --needed --noconfirm "${PACMAN_PKGS[@]}"
-paru -S --needed --noconfirm "${AUR_PKGS[@]}"
-
 sudo systemctl enable --now cups
+
+paru -S --needed --noconfirm "${AUR_PKGS[@]}"
 
 echo "Done."
