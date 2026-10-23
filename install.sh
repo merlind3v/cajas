@@ -28,6 +28,8 @@ AUR_PKGS=(
   onlyoffice-bin
   masterpdfeditor-free
   ttf-ms-fonts ttf-vista-fonts
+  # Printer drivers: Brother DCP-1510, Canon G2070
+  brlaser cnijfilter2
 )
 
 sudo pacman -S --needed --noconfirm "${PACMAN_PKGS[@]}"
